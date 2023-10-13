@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Assignment</title>
+    <!-- Specify the favicon correctly -->
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,600&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="form-container">
+        <p class="form-header">Sign Up</p>
+        <form>
+          <table class="form-table">
+            <tr>
+              <td>Username:</td>
+              <td>
+                <input
+                  type="text"
+                  maxlength="30"
+                  minlength="4"
+                  margin-top:
+                  20px
+                  required
+                  placeholder="(Required)"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td><input type="email" placeholder="Optional" /></td>
+            </tr>
+            <tr>
+              <td>Password:</td>
+              <td>
+                <input
+                  type="text"
+                  required
+                  placeholder="(Required)"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must contain at least one number, one uppercase and one lowercase character, and be at least 8 characters long."
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Date of Birth:</td>
+              <td><input type="date" /></td>
+            </tr>
+
+            <tr>
+              <td colspan="2">
+                <br />
+                Terms of Service:
+                <input name="terms" class="agree" type="radio" required /> Agree
+                <input name="terms" class="disagree" type="radio" /> Disagree
+                <br /><br />
+                <input class="btn" type="submit" value="Sign Up" />
+                <p>Already a member? <a href="signin.html">Login here</a></p>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
